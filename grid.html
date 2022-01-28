@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Safari Layout Quirks (Grid)</title>
+  </head>
+  <body>
+    <style>
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .test {
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: 75px 1fr 75px;
+      }
+      .content {
+        background-color: mediumseagreen;
+      }
+      .header {
+        background-color: dodgerblue;
+      }
+      .footer {
+        background-color: coral;
+      }
+    </style>
+    <div class="wrap">
+      <div class="test">
+        <div class="header">Header</div>
+        <div class="content">
+          Main content
+          <a href="/">Go to Flex</a>
+        </div>
+        <div class="footer">Footer</div>
+      </div>
+    </div>
+  </body>
+</html>

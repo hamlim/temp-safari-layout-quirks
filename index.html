@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Safari Layout Quirks (Flex)</title>
+  </head>
+  <body>
+    <style>
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .test {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .content {
+        flex-grow: 1;
+        background-color: mediumseagreen;
+      }
+      .header {
+        background-color: dodgerblue;
+      }
+      .footer {
+        background-color: coral;
+      }
+    </style>
+    <div class="wrap">
+      <div class="test">
+        <div class="header">Header</div>
+        <div class="content">
+          Main content
+          <a href="/grid">Go to Grid</a>
+        </div>
+        <div class="footer">Footer</div>
+      </div>
+    </div>
+  </body>
+</html>
